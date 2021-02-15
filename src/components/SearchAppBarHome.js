@@ -192,7 +192,7 @@ const closeDialog = () => {
           
           {/* <Typography className={classes.title} variant="h6" noWrap> */}
             <Link href="/">
-            <img src="http://192.168.1.43/logikinventory/src/static/media/logikorlogo-white.svg"  className={classes.resize}/>
+            <img src="../static/media/logikorlogo-white.svg"  className={classes.resize}/>
             </Link>
             <Typography className={classes.title}></Typography>
           {/* </Typography> */}
