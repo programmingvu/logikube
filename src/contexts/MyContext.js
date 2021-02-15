@@ -9,7 +9,7 @@ export const MyContext = createContext();
 
 // Define the base URL
 const Axios = axios.create({
-    baseURL: '/192.168.1.43/logikparts/',
+    baseURL: 'http://192.168.1.43/logikparts/',
 });
 
 class MyContextProvider extends Component{
