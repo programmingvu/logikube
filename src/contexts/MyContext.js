@@ -69,7 +69,7 @@ class MyContextProvider extends Component{
     }
 
     getPart = async (partNumber) => {
-        const part = await Axios.post('part-info.php', {
+        const part = await Axios.post('part-api.php', {
             value:'part'
         });
 
@@ -78,7 +78,7 @@ class MyContextProvider extends Component{
 
     partSearch = async (value) => {
        
-        const part = await Axios.post('part-info.php', {
+        const part = await Axios.post('part-api.php', {
             value:'part_search',
             vendor: value.vendor_name,
             vendor_number: value.vendor_number,
@@ -97,7 +97,7 @@ class MyContextProvider extends Component{
 
 
     getVendor = async () => {
-        const vendor = await Axios.post('part-info.php',{
+        const vendor = await Axios.post('part-api.php',{
             value:'vendor'
         });
         // console.log(vendor);
@@ -109,7 +109,7 @@ class MyContextProvider extends Component{
         
         
         // return vendor.data;
-        // const {data} = await Axios.post('part-info.php',{
+        // const {data} = await Axios.post('part-api.php',{
         // this.setState({
         //     ...this.state,
         //     partSearch:data
@@ -119,7 +119,7 @@ class MyContextProvider extends Component{
     }
 
     getVendorNumber = async () => {
-        const vendorNumber = await Axios.post('part-info.php', {
+        const vendorNumber = await Axios.post('part-api.php', {
             value:'vendor_number'
         });
         // console.log(vendorNumber);
@@ -130,7 +130,7 @@ class MyContextProvider extends Component{
     }
 
     getPartNumber = async() => {
-        const partNumber = await Axios.post('part-info.php', {
+        const partNumber = await Axios.post('part-api.php', {
             value:'part_number'
         });
         this.setState({
@@ -140,7 +140,7 @@ class MyContextProvider extends Component{
     }
 
     getContainerNumber = async() => {
-        const containerNumber = await Axios.post('part-info.php', {
+        const containerNumber = await Axios.post('part-api.php', {
             value:'container_number'
         });
         this.setState({
@@ -150,7 +150,7 @@ class MyContextProvider extends Component{
     }
 
     getParts = async(user) => {
-        const parts = await Axios.post('part-info.php', {
+        const parts = await Axios.post('part-api.php', {
             value:'parts'
         });
         this.setState({
@@ -161,7 +161,7 @@ class MyContextProvider extends Component{
     }
 
     getUsers = async() => {
-        const users = await Axios.post('part-info.php', {
+        const users = await Axios.post('part-api.php', {
             value:'users'
         });
         this.setState({
@@ -183,7 +183,7 @@ class MyContextProvider extends Component{
 
     updatePart = async (parts) => {
         
-        const part = await Axios.post('part-info.php', {
+        const part = await Axios.post('part-api.php', {
             value:'update',
             vendorName: parts.vendorName,
             vendorNumber: parts.vendorNumber,
@@ -211,7 +211,7 @@ class MyContextProvider extends Component{
 
     updateUser = async (user) => {
 
-        const data = await Axios.post('part-info.php', {
+        const data = await Axios.post('part-api.php', {
             value: 'update_user',
             id: user.id,
             firstName: user.firstName,
@@ -225,7 +225,7 @@ class MyContextProvider extends Component{
     }
 
     addPart = async (part) => {
-        const data = await Axios.post('part-info.php', {
+        const data = await Axios.post('part-api.php', {
             value:'add_part',
             vendorName: part.vendorName,
             vendorNumber: part.vendorNumber,
@@ -250,7 +250,7 @@ class MyContextProvider extends Component{
     }
 
     getAudit = async (part) => {
-        const audit = await Axios.post('part-info.php', {
+        const audit = await Axios.post('part-api.php', {
             value:'audit',
             partNumber: part
         });
@@ -261,7 +261,7 @@ class MyContextProvider extends Component{
     }
 
     setActive = async(parts) => {
-        const active = await Axios.post('part-info.php', {
+        const active = await Axios.post('part-api.php', {
             value:'active',
             parts: parts
 
