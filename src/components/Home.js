@@ -153,7 +153,7 @@ function Home(){
         event.preventDefault();
         // fetchData();
       // console.log(state.partInfo.vendor_name.vendor);
-      console.log(state.partInfo);
+      // console.log(state.partInfo);
         await partSearch(state.partInfo);
         setRedirect(true);
         // setData(e);
@@ -165,7 +165,7 @@ function Home(){
       var id = e.target.getAttribute('id');
       var name = id.split("-")[0];
       var value = e.target.textContent;
-      console.log(value);
+      // console.log(value);
         setState({
             ...state,
             partInfo:{
@@ -203,7 +203,7 @@ function Home(){
     // If user Logged in
     if(isAuth)
     {
-      console.log(state);
+      // console.log(state);
         if (redirect)
         
             return <Redirect to={{ pathname: '/part', state:{part: state}}} />

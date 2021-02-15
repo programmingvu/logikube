@@ -111,7 +111,7 @@ export default function SearchAppBarHome({handleChangeValue}) {
 //   }
 
 function reset(event) {
-  console.log('test');
+  // console.log('test');
   window.location.reload(false);
 }
 
@@ -126,7 +126,7 @@ const handleClick = (event) => {
 const handleClose = () => {
     // console.log('test');
   setAnchorEl(null);
-  console.log(anchorEl);
+  // console.log(anchorEl);
 
 };
 

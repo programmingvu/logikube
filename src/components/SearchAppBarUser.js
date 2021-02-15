@@ -120,7 +120,7 @@ const handleClick = (event) => {
 const handleClose = () => {
     // console.log('test');
   setAnchorEl(null);
-  console.log(anchorEl);
+  // console.log(anchorEl);
 
 };
 

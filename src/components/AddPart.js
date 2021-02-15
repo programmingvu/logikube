@@ -81,9 +81,9 @@ export default function AddPart({ open, onClose }) {
     const savePart = async(event) => {
         // event.preventDefault();
         // console.log(theUser);
-        console.log(state.partInfo);
+        // console.log(state.partInfo);
         const data = await addPart(state.partInfo);
-        console.log(data);
+        // console.log(data);
         if(data.success) {
             
             setState({

@@ -225,7 +225,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
   const EnhancedTableToolbar = (props) => {
-    console.log(props);
+    // console.log(props);
     const classes = useToolbarStyles();
     const { numSelected } = props;
     const { items } = props;
@@ -236,7 +236,7 @@ const useStyles = makeStyles((theme) => ({
   
     const handleActiveClick = async(event) => {
       // const data = await setActive(items);
-      console.log(items);
+      // console.log(items);
     }
 
     return (
@@ -328,7 +328,7 @@ localStorage.setItem('partData', partData);
       setPart(name);
     };
     const handleCheckboxClick = () => {
-      console.log('test');
+      // console.log('test');
     };
     const handleClose = () => {
       setOpen(false);
@@ -413,8 +413,8 @@ localStorage.setItem('partData', partData);
     }
 
     
-    console.log(selected);
-    console.log(partData);
+    // console.log(selected);
+    // console.log(partData);
     if (partData == "yes") {
         alert('Please select a value');
         return <Redirect to={{ pathname: '/'}} />

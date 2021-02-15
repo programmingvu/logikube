@@ -299,7 +299,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
   const EnhancedTableToolbar = (props) => {
-    console.log(props);
+    // console.log(props);
     const classes = useToolbarStyles();
     const { numSelected } = props;
     const { items } = props;
@@ -310,7 +310,7 @@ const useStyles = makeStyles((theme) => ({
   
     const handleActiveClick = async(event) => {
       // const data = await setActive(items);
-      console.log(items);
+      // console.log(items);
     }
 
     return (
@@ -387,7 +387,7 @@ const useStyles = makeStyles((theme) => ({
     // const [part] = React.useState(null);
 
     const [tableData, setTableData] = React.useState([]);
-    console.log(tableData);
+    // console.log(tableData);
     useEffect(() => {
       setTableData(parts);
     }, [parts])
@@ -397,7 +397,7 @@ const useStyles = makeStyles((theme) => ({
       setPart(name);
     };
     const handleCheckboxClick = () => {
-      console.log('test');
+      // console.log('test');
     };
     const handleClose = () => {
       setOpen(false);
@@ -482,7 +482,7 @@ const useStyles = makeStyles((theme) => ({
     }
 
     
-    console.log(selected);
+    // console.log(selected);
     return (
       
       <div className={classes.root}>

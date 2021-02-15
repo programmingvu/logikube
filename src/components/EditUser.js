@@ -54,7 +54,7 @@ export default function EditUser({ data }) {
         successMsg:''
     }
 
-    console.log(initialState);
+    // console.log(initialState);
     
     const {theUser} = rootState;
     const [state, setState] = useState(initialState);
@@ -119,7 +119,7 @@ export default function EditUser({ data }) {
     const saveData = async(event) => {
         // event.preventDefault();
         // console.log(theUser);
-        console.log(state.userInfo);
+        // console.log(state.userInfo);
         const data = await updateUser(state.userInfo);
         
         if(data.success) {
