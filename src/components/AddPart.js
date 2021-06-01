@@ -51,7 +51,7 @@ export default function AddPart({ open, onClose }) {
             partNumber: "",
             partDescription: "",
             weight: "",
-            weightUOM: "lbs",
+            weightUOM: "",
             quantity: "",
             reusable: "",
             containerType: "",
@@ -196,12 +196,29 @@ export default function AddPart({ open, onClose }) {
                         name="weight"
                         margin="dense"
                         id="weight"
-                        label="Weight Per Piece (lbs)"
+                        label="Weight Per Piece"
                         defaultValue={state.partInfo.weight}
                         fullWidth
                         onChange={onChangeValue}
                         required
                     />
+
+                    <FormControl className={classes.formControl}>
+                        <InputLabel id="demo-simple-select-label">Weight UOM</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            name="weightUOM"
+                            defaultValue={state.partInfo.weightUOM}
+                            onChange={onChangeValue}
+                            required
+                        >
+                            <MenuItem value='lbs'>lbs</MenuItem>
+                            <MenuItem value='kg'>kg</MenuItem>
+                            <MenuItem value='g'>g</MenuItem>
+                            <MenuItem value='oz'>oz</MenuItem>
+                        </Select>
+                    </FormControl>
 
 
 
