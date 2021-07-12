@@ -328,38 +328,38 @@ function Home(){
                     />
 
                   </Grid>
-                  <Grid item xs={12}>
+//                   <Grid item xs={12}>
 
-                  <Autocomplete
-                        id="container_number"
-                        options={containerNumber}
-                        getOptionLabel={(option)=>option.container_number}
-                      //   onChange={(event,value) =>        setState({
-                      //     ...state,
-                      //     partInfo:{
-                      //         ...state.partInfo,
-                      //         container_number:value
-                      //     }
-                      // })}
-                      onChange={onChangeValue}
-                    renderInput={(params)=> <TextField
-                    {...params}
-                        variant="outlined"
+//                   <Autocomplete
+//                         id="container_number"
+//                         options={containerNumber}
+//                         getOptionLabel={(option)=>option.container_number}
+//                       //   onChange={(event,value) =>        setState({
+//                       //     ...state,
+//                       //     partInfo:{
+//                       //         ...state.partInfo,
+//                       //         container_number:value
+//                       //     }
+//                       // })}
+//                       onChange={onChangeValue}
+//                     renderInput={(params)=> <TextField
+//                     {...params}
+//                         variant="outlined"
                         
-                        fullWidth
-                        name="container_number"
-                        label="Container Number"
-                        type="container_number"
-                        id="container_number"
-                      //   value={state.partInfo.container_number} 
+//                         fullWidth
+//                         name="container_number"
+//                         label="Container Number"
+//                         type="container_number"
+//                         id="container_number"
+//                       //   value={state.partInfo.container_number} 
 
                         
-                      />
-                    }
-                    />
+//                       />
+//                     }
+//                     />
 
 
-                  </Grid>
+//                   </Grid>
                   <Grid item xs={12}>
 
                   </Grid>
