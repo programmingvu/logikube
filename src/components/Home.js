@@ -328,7 +328,7 @@ function Home(){
                     />
 
                   </Grid>
-//                   <Grid item xs={12}>
+                  <Grid item xs={12}>
 
 //                   <Autocomplete
 //                         id="container_number"
@@ -359,7 +359,7 @@ function Home(){
 //                     />
 
 
-//                   </Grid>
+                  </Grid>
                   <Grid item xs={12}>
 
                   </Grid>
