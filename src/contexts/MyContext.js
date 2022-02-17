@@ -31,6 +31,9 @@ class MyContextProvider extends Component{
         partData:[],
         audit:[],
         users:[],
+        program:[],
+        programYearly:[],
+        programDaily:[],
     }
     
     // Toggle between Login & Signup page
@@ -243,7 +246,10 @@ class MyContextProvider extends Component{
             containerUOM: part.containerUOM,
             stackable: part.stackable,
             active: part.active,
-            user: cookies.get('full_name')
+            user: cookies.get('full_name'),
+            program: part.program,
+            programYearly: part.programYearly,
+            programDaily: part.programDaily,
         });
 
         return data.data;

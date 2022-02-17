@@ -62,6 +62,9 @@ export default function AddPart({ open, onClose }) {
             containerUOM: "in",
             stackable: "",
             active: "",
+            program: "",
+            programYearly: "",
+            programDaily: "",
         },
         errorMsg:'',
         successMsg:''
@@ -343,6 +346,40 @@ export default function AddPart({ open, onClose }) {
                             <MenuItem value='Inactive'>Inactive</MenuItem>
                         </Select>
                     </FormControl>
+
+                    <TextField
+                        autoFocus
+                        name="program"
+                        margin="dense"
+                        id="program"
+                        label="Program"
+                        defaultValue={state.partInfo.program}
+                        fullWidth
+                        onChange={onChangeValue}
+                        required
+                    />
+                            <TextField
+                        autoFocus
+                        name="programYearly"
+                        margin="dense"
+                        id="program_yearly"
+                        label="Program Volume Yearly"
+                        defaultValue={state.partInfo.programYearly}
+                        fullWidth
+                        onChange={onChangeValue}
+                        required
+                    />
+                                                <TextField
+                        autoFocus
+                        name="programDaily"
+                        margin="dense"
+                        id="program_daily"
+                        label="Program Volume Daily"
+                        defaultValue={state.partInfo.programDaily}
+                        fullWidth
+                        onChange={onChangeValue}
+                        required
+                    />
                     {/* <Button onClick={handleClose}>Cancel</Button>
                     <Button onClick={saveData}>Save</Button> */}
                     {/* <div>
