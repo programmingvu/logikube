@@ -356,7 +356,7 @@ export default function AddPart({ open, onClose }) {
                         defaultValue={state.partInfo.program}
                         fullWidth
                         onChange={onChangeValue}
-                        required
+                        
                     />
                             <TextField
                         autoFocus
@@ -367,7 +367,7 @@ export default function AddPart({ open, onClose }) {
                         defaultValue={state.partInfo.programYearly}
                         fullWidth
                         onChange={onChangeValue}
-                        required
+                        
                     />
                                                 <TextField
                         autoFocus
@@ -378,7 +378,7 @@ export default function AddPart({ open, onClose }) {
                         defaultValue={state.partInfo.programDaily}
                         fullWidth
                         onChange={onChangeValue}
-                        required
+                        
                     />
                     {/* <Button onClick={handleClose}>Cancel</Button>
                     <Button onClick={saveData}>Save</Button> */}
