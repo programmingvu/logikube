@@ -58,6 +58,9 @@ export default function EditPart({ data }) {
             containerUOM: data.container_uom,
             stackable: data.stackable,
             active: data.active,
+            program: data.program,
+            programYearly: data.program_yearly,
+            programDaily: data.program_daily,
         },
         errorMsg:'',
         successMsg:''
@@ -391,6 +394,39 @@ export default function EditPart({ data }) {
                             <MenuItem value='Inactive'>Inactive</MenuItem>
                         </Select>
                     </FormControl>
+                    <TextField
+                        autoFocus
+                        name="program"
+                        margin="dense"
+                        id="program"
+                        label="Program"
+                        defaultValue={state.partInfo.program}
+                        fullWidth
+                        onChange={onChangeValue}
+                        
+                    />
+                            <TextField
+                        autoFocus
+                        name="programYearly"
+                        margin="dense"
+                        id="program_yearly"
+                        label="Program Volume Yearly"
+                        defaultValue={state.partInfo.programYearly}
+                        fullWidth
+                        onChange={onChangeValue}
+                        
+                    />
+                                                <TextField
+                        autoFocus
+                        name="programDaily"
+                        margin="dense"
+                        id="program_daily"
+                        label="Program Volume Daily"
+                        defaultValue={state.partInfo.programDaily}
+                        fullWidth
+                        onChange={onChangeValue}
+                        
+                    />
                     {/* <Button onClick={handleClose}>Cancel</Button>
                     <Button onClick={saveData}>Save</Button> */}
                     {/* <div>

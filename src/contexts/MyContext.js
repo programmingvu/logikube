@@ -204,6 +204,9 @@ class MyContextProvider extends Component{
             containerUOM: parts.containerUOM,
             stackable: parts.stackable,
             active: parts.active,
+            program:parts.program,
+            programYearly:parts.programYearly,
+            programDaily:parts.programDaily,
             user: cookies.get('full_name')
 
         });
