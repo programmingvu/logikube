@@ -142,7 +142,7 @@ export default function EditPart({ data }) {
             
           
         }
-        window.location.reload();
+        // window.location.reload();
         
         // console.log(state.partInfo.containerType);
     }
