@@ -123,6 +123,18 @@ const initialState = {
                 <b>Stackable: </b>
                 {data.stackable}
             </p>
+            <p>
+                <b>Program: </b>
+                {data.program}
+            </p>
+            <p>
+                <b>Program Volume Yearly: </b>
+                {data.program_yearly}
+            </p>
+            <p>
+                <b>Program Volume Daily: </b>
+                {data.program_daily}
+            </p>
           </Typography>
 
 
