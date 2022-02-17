@@ -260,6 +260,7 @@ export default function EditPart({ data }) {
                             <MenuItem value='kg'>kg</MenuItem>
                             <MenuItem value='g'>g</MenuItem>
                             <MenuItem value='oz'>oz</MenuItem>
+                            <MenuItem value='mm'>mm</MenuItem>
                         </Select>
                     </FormControl>
 
@@ -296,18 +297,14 @@ export default function EditPart({ data }) {
                             defaultValue={state.partInfo.containerType}
                             onChange={onChangeValue}
                         >
-                            <MenuItem value='barrel'>Barrel</MenuItem>
-                            <MenuItem value='bin'>Bin</MenuItem>
-                            <MenuItem value='box'>Box</MenuItem>
-                            <MenuItem value='bundle'>Bundle</MenuItem>
-                            <MenuItem value='carton'>Carton</MenuItem>
-                            <MenuItem value='case'>Case</MenuItem>
-                            <MenuItem value='create'>Crate</MenuItem>
-                            <MenuItem value='cylinder'>Cylinder</MenuItem>
-                            <MenuItem value='drum'>Drum</MenuItem>
-                            <MenuItem value='rack'>Rack</MenuItem>
-                            <MenuItem value='roll'>Roll</MenuItem>
-                            <MenuItem value='tote'>Tote</MenuItem>
+                            <MenuItem value='barrel'>Bale</MenuItem>
+                            <MenuItem value='bin'>Box</MenuItem>
+                            <MenuItem value='box'>LTL</MenuItem>
+                            <MenuItem value='bundle'>MCON</MenuItem>
+                            <MenuItem value='carton'>Pallet</MenuItem>
+                            <MenuItem value='case'>PCON</MenuItem>
+                            <MenuItem value='create'>PPAL</MenuItem>
+                            <MenuItem value='cylinder'>TL</MenuItem>                            
                         </Select>
                     </FormControl>
 
