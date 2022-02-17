@@ -129,7 +129,7 @@ export default function EditPart({ data }) {
     const saveData = async(event) => {
         // event.preventDefault();
         // console.log(theUser);
-        // console.log(state.partInfo);
+        console.log(state.partInfo);
         const data = await updatePart(state.partInfo);
         
         if(data.success) {
