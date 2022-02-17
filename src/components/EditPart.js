@@ -395,7 +395,7 @@ export default function EditPart({ data }) {
                         </Select>
                     </FormControl>
                     <TextField
-                        autoFocus
+                        
                         name="program"
                         margin="dense"
                         id="program"
@@ -406,7 +406,7 @@ export default function EditPart({ data }) {
                         
                     />
                             <TextField
-                        autoFocus
+                        
                         name="programYearly"
                         margin="dense"
                         id="program_yearly"
@@ -417,7 +417,7 @@ export default function EditPart({ data }) {
                         
                     />
                                                 <TextField
-                        autoFocus
+                        
                         name="programDaily"
                         margin="dense"
                         id="program_daily"
