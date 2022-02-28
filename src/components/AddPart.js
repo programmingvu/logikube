@@ -289,7 +289,7 @@ export default function AddPart({ open, onClose }) {
                         name="length"
                         margin="dense"
                         id="length"
-                        label="Container Length (in)"
+                        label="Container Length (mm)"
                         defaultValue={state.partInfo.length}
                         fullWidth
                         onChange={onChangeValue}
@@ -300,7 +300,7 @@ export default function AddPart({ open, onClose }) {
                         name="width"
                         margin="dense"
                         id="width"
-                        label="Container Width (in)"
+                        label="Container Width (mm)"
                         defaultValue={state.partInfo.width}
                         fullWidth
                         onChange={onChangeValue}
@@ -311,7 +311,7 @@ export default function AddPart({ open, onClose }) {
                         name="height"
                         margin="dense"
                         id="container_height"
-                        label="Container Height (in)"
+                        label="Container Height (mm)"
                         defaultValue={state.partInfo.height}
                         fullWidth
                         onChange={onChangeValue}
