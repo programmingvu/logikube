@@ -361,7 +361,7 @@ export default function EditPart({ data }) {
                             <MenuItem value='cm'>cm</MenuItem>
                             <MenuItem value='m'>m</MenuItem>
                             <MenuItem value='in'>in</MenuItem>
-                            <MenuItem value='lbs'>lbs</MenuItem>
+                            
                         </Select>
                     </FormControl>
 
