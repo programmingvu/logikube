@@ -260,7 +260,7 @@ export default function EditPart({ data }) {
                             <MenuItem value='kg'>kg</MenuItem>
                             <MenuItem value='g'>g</MenuItem>
                             <MenuItem value='oz'>oz</MenuItem>
-                            <MenuItem value='mm'>mm</MenuItem>
+                            
                         </Select>
                     </FormControl>
 
