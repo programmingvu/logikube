@@ -21,7 +21,7 @@ $conn = $db_connection->dbConnection();
 
 $data = json_decode(file_get_contents("php://input"));
 $returnData = [];
-
+console.log($_SERVER["REQUEST_METHOD"]);
 // IF REQUEST METHOD IS NOT EQUAL TO POST
 if($_SERVER["REQUEST_METHOD"] != "POST"):
     $returnData = msg(0,404,'Page Not Found!');
