@@ -9,7 +9,7 @@ export const MyContext = createContext();
 
 // Define the base URL
 const Axios = axios.create({
-    baseURL: 'api',
+    baseURL: '/api',
 });
 
 class MyContextProvider extends Component{
