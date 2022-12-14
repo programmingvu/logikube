@@ -19,7 +19,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
 import  { Redirect } from 'react-router-dom'
-
+import logo from '../images/logikorlogo-white.svg';
 import {MyContext} from '../contexts/MyContext'
 
 
@@ -192,7 +192,7 @@ const closeDialog = () => {
           
           {/* <Typography className={classes.title} variant="h6" noWrap> */}
             <Link href="/">
-            <img src="http://logikube.logikor.com/logikparts/logikorlogo-white.svg"  className={classes.resize}/>
+            <img src={logo} className={classes.resize}/>
             </Link>
             <Typography className={classes.title}></Typography>
           {/* </Typography> */}
