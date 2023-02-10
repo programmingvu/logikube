@@ -11,7 +11,7 @@ import {
 } from "@material-ui/core";
 import { MyContext } from '../contexts/MyContext'
 import EditIcon from "@material-ui/icons/Edit";
-
+import  { Redirect } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -77,7 +77,7 @@ export default function EditPart({ data }) {
     // const [container, setContainer] = React.useState('');
     // const [stackable, setStackable] = React.useState('');
     // const part = {data};
-    
+    const [redirect, setRedirect] = useState(false);
     // console.log(stackable);
     // const [open,setOpen, part] = props.functions;
     //   const handleClickOpen = () => {
@@ -127,9 +127,9 @@ export default function EditPart({ data }) {
     // }
 
     const saveData = async(event) => {
-        // event.preventDefault();
+        event.preventDefault();
         // console.log(theUser);
-        console.log(state.partInfo);
+        
         const data = await updatePart(state.partInfo);
         
         if(data.success) {
@@ -143,7 +143,7 @@ export default function EditPart({ data }) {
           
         }
         // window.location.reload();
-        
+        setRedirect(true);
         // console.log(state.partInfo.containerType);
     }
 
@@ -177,7 +177,9 @@ export default function EditPart({ data }) {
           primary={true}
           />,
       ];
-
+      if (redirect)
+        
+      return <Redirect to={{ pathname: '/'}} />
     return (
         <>
             <IconButton onClick={handleClickOpen}>

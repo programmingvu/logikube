@@ -171,6 +171,12 @@ const closeDialog = () => {
         >
             Parts List
             </MenuItem>
+            <MenuItem 
+        onClick={handleClose}
+        component={Link} href="/" color="inherit"
+        >
+            Search
+            </MenuItem>
 
         {/* <MenuItem 
         onClick={handleClose}
